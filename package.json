@@ -1,0 +1,9 @@
+{
+  "name": "vanilla-page",
+  "version": "1.0.0",
+  "description": "A web page built with as litle tooling as possible",
+  "main": "index.js",
+  "repository": "https://github.com/miayam/vanilla-page",
+  "author": "Muhammad D. Ramadhan",
+  "license": "MIT"
+}
