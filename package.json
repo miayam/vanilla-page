@@ -10,13 +10,12 @@
     "env:dev": "cross-env NODE_ENV=dev",
     "env:prod": "cross-env NODE_ENV=prod",
     "env:test": "cross-env NODE_ENV=test",
-    "webpack": "webpack $npm_package_config_webpack_args",
     "start": "yarn env:dev webpack-dev-server --open",
-    "webpack:test:server": "yarn env:test && yarn webpack --watch",
+    "webpack:test:server": "yarn env:test webpack $npm_package_config_webpack_args --watch",
     "jest": "jest test/bundle.test.js",
     "jest:server": "jest test/bundle.test.js --watch",
     "build:clean": "rimraf \"dist/!(.git*|Procfile)**\"",
-    "build": "yarn build:clean && yarn env:prod && yarn webpack"
+    "build": "yarn build:clean && yarn env:prod webpack $npm_package_config_webpack_args"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

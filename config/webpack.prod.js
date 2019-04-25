@@ -1,6 +1,6 @@
 const path = require('path');
 const Merge = require('webpack-merge');
-const CommonConfig = require('./webpack.common.config.js');
+const CommonConfig = require('./webpack.common.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = Merge(CommonConfig, {

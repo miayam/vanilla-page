@@ -4,5 +4,5 @@ module.exports = function () {
         env = 'dev';
     }
     env = process.env.NODE_ENV
-    return require(`./config/webpack.${env}.config.js`);
+    return require(`./config/webpack.${env}.js`);
 };

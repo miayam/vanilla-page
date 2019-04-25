@@ -1,7 +1,7 @@
 const path = require('path');
 const glob = require('glob');
 const Merge = require('webpack-merge');
-const CommonConfig = require('./webpack.common.config.js');
+const CommonConfig = require('./webpack.common.js');
 
 const testFiles = glob
     .sync('**/*.test.js')
