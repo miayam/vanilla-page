@@ -1,1 +1,57 @@
+@import "../utilities/colors";
 
+// For testing only
+.dark-blue {
+    background-color: $dark-blue;
+    padding: 30px;
+}
+
+.wrapper {
+    padding: 50px;
+    background-color: $smoke_gray;
+}
+
+.smokeGray {
+    margin: 30px;
+    background: $smoke_gray;
+    padding: 50px;
+    border: 1px solid $bold_smoke_gray;
+    box-shadow: 0px 0.8px 0 0.8px $white, inset 0 0.8px 0 0.8px $white;
+}
+
+.atom-button {
+    padding: 12px;
+    background-color: $smoke_gray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.--small {
+    min-width: 100px;
+}
+
+.--take-up-whole-space {
+    width: 100%;
+}
+
+.--orange {
+    background-color: $orange;
+    border: 1px solid $orange;
+    color: $white;
+}
+
+.--blue {
+    background-color: $blue;
+    border: 1px solid $blue;
+    color: $white;
+}
+
+.--bordered {
+    border: 1px solid $white;
+    background-color: transparent;
+    color: $white;
+    &:hover {
+        background-color: $white;
+        color: $dark_blue;
+    }
+}

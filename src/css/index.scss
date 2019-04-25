@@ -1,3 +1,6 @@
+// Sanitize CSS default for cross-browser styling.
+@import "~sanitize.css";
+
 // Atomic Design
 @import "atoms/index.scss";
 @import "molecules/index.scss";

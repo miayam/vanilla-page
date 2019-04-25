@@ -1,3 +1,5 @@
+include atoms/button
+
 html(lang="en")
     head
         meta(charset="UTF-8")
@@ -5,5 +7,16 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Webpack setting works!
     body
-        main(class="atom-container")
-            h1 Test
+        main
+            section(class="dark-blue")
+                +button("atom-button --bordered --small", "Hello")
+            section(class="dark-blue")
+                +button("atom-button --orange --take-up-whole-space", "Hello")
+            section(class="dark-blue")
+                +button("atom-button --blue --take-up-whole-space", "Hello")
+            section(class="wrapper")
+                section(class="smokeGray")
+                    p Terlalu manis untuk dilupakan.
+                    +button('atom-button --orange --small', "Saya Ini Waras!")
+                    +button('atom-button --orange --small', "Saya Ini Waras!")
+                    +button('atom-button --orange --small', "Saya Ini Waras!")
