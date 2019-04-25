@@ -2,14 +2,10 @@ const path = require('path');
 const Merge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const glob = require('glob')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
-
-const PATHS = {
-    src: path.join(__dirname, '../src')
-}
+const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 module.exports = Merge(CommonConfig, {
     output: {
@@ -17,7 +13,6 @@ module.exports = Merge(CommonConfig, {
         filename: 'bundle-[contenthash].js',
     },
     optimization: {
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
         splitChunks: {
             cacheGroups: {
                 styles: {
@@ -30,7 +25,6 @@ module.exports = Merge(CommonConfig, {
                     name: 'vendor',
                     test: /[\\/]node_modules[\\/]/,
                     chunks: 'all',
-                    enforce: true
                 },
             },
         },
@@ -40,8 +34,21 @@ module.exports = Merge(CommonConfig, {
             filename: '[name]-[contenthash].css',
             chunkFilename: '[id]-[contenthash].css',
         }),
+        new OptimizeCSSAssetsPlugin({
+            cssProcessor: require('cssnano'),
+            cssProcessorOptions: {
+                discardComments: {
+                    removeAll: true,
+                },
+                // Run cssnano in safe mode to avoid
+                // potentially unsafe transformations.
+                safe: true,
+            },
+            canPrint: false,
+        }),
         new PurgecssPlugin({
-            paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-        })
+            paths: glob.sync(`${path.join(__dirname, '../src')}/**/*`, { nodir: true }),
+        }),
+        new MinifyPlugin(),
     ],
 });
