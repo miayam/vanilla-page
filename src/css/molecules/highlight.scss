@@ -1,0 +1,22 @@
+@import "../utilities/sizes";
+@import "../utilities/colors";
+
+.molecule-highlight {
+    display: flex;
+    padding: $default_space;
+    border: 1px solid $bold_smoke_gray;
+    box-shadow: 0px 0.8px 0 0.8px $white, inset 0 0.8px 0 0.8px $white;
+    position: relative;
+}
+
+.molecule-highlight__paragraph {
+    width: 100%;
+}
+
+.molecule-highlight__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    margin: $icon_margin;
+}

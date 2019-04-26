@@ -6,3 +6,12 @@
 @import "molecules/index.scss";
 @import "organisms/index.scss";
 @import "templates/index.scss";
+
+// Selected icons from FontAwesome. Why would we load hundreds of icons if we just need 6?
+// Special thanks to Icomoon.io. This web app lets you pick icons you need. That's all.
+@import "utilities/icons.scss";
+
+// Make sure html and body's height take up the whole space.
+html, body {
+    height: 100%;
+}

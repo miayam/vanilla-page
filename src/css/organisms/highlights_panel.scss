@@ -1,0 +1,34 @@
+@import "../utilities/colors";
+@import "../utilities/sizes";
+
+// Container for hightlights panel.
+.organism-highlightsPanel {
+    display: flex;
+    flex-direction: column;
+    max-width: $max_container_size; // 1360px
+    justify-content: center;
+    align-items: center;
+}
+
+// Wrapper for highlight tiles.
+.organism-highlightsPanel__highlightsWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $smoke_gray;
+}
+
+// Layout for hightlight molecule.
+.organism-highlightsPanel__highlight {
+    display: flex;
+    flex-basis: $min_highlight_size; // 240px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: $min_highlight_size; // 240px;
+    width: calc(($max_container_mobile_size - 100%) * 1000);
+    max-width: 100%;
+    padding: $default_space;
+    @media(min-width: $max_container_tablet_size) {
+        width: 33.333%;
+    }
+}
