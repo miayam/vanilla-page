@@ -1,4 +1,6 @@
 include atoms/button
+include molecules/highlight
+include organisms/highlightsPanel
 
 doctype html
 html(lang="en")
@@ -16,10 +18,4 @@ html(lang="en")
                 +button("atom-button --orange --take-up-whole-space", "Hello")
             section(class="dark-blue")
                 +button("atom-button --blue --take-up-whole-space", "Hello")
-            section(class="wrapper")
-                section(class="smokeGray")
-                    p Terlalu manis untuk dilupakan.
-                    +button('atom-button --orange --small', "Hai!")
-                    +button('atom-button --orange --small', "Yolo!")
-                    +button('atom-button --orange --small', "Good!")
-                    span(class="icon icon-bullhorn")
+            +highlightsPanel()

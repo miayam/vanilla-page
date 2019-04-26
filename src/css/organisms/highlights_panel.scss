@@ -1,16 +1,23 @@
 @import "../utilities/colors";
 @import "../utilities/sizes";
 
-// Container for hightlights panel.
 .organism-highlightsPanel {
+    background-color: $smoke_gray;
+    width: 100%;
+    padding: $default_space 0;
+}
+
+// Wrapper for hightlights panel. No semantic meaning.
+.organism-highlightsPanel__wrapper {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     max-width: $max_container_size; // 1360px
     justify-content: center;
     align-items: center;
 }
 
-// Wrapper for highlight tiles.
+// Wrapper for highlight tiles. No semantic meaning.
 .organism-highlightsPanel__highlightsWrapper {
     display: flex;
     flex-direction: row;
@@ -24,11 +31,11 @@
     flex-basis: $min_highlight_size; // 240px;
     flex-grow: 1;
     flex-shrink: 0;
-    min-width: $min_highlight_size; // 240px;
-    width: calc(($max_container_mobile_size - 100%) * 1000);
+    min-width: 50%;
+    width: calc((#{$max_container_mobile_size} - 100%) * 1000);
     max-width: 100%;
     padding: $default_space;
     @media(min-width: $max_container_tablet_size) {
-        width: 33.333%;
+        min-width: 33.333%;
     }
 }

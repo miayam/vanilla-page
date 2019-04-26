@@ -2,21 +2,28 @@
 @import "../utilities/colors";
 
 .molecule-highlight {
-    display: flex;
     padding: $default_space;
     border: 1px solid $bold_smoke_gray;
     box-shadow: 0px 0.8px 0 0.8px $white, inset 0 0.8px 0 0.8px $white;
     position: relative;
+    height: 200px;
 }
 
 .molecule-highlight__paragraph {
     width: 100%;
 }
 
+.molecule-highlight__heading {
+    font-size: $h2;
+    margin-top: unset;
+}
+
 .molecule-highlight__icon {
     position: absolute;
     top: 0;
     right: 0;
+    color: $medium_smoke_gray;
+    font-size: $h1;
     display: inline-block;
     margin: $icon_margin;
 }
