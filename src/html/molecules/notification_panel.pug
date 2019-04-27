@@ -1,0 +1,8 @@
+include ../atoms/button
+
+mixin notificationPanel()
+    section(class="molecule-notificationPanel")
+        .molecule-notificationPanel__content
+            p!= 'By accessing and using this website, you acknowledge that you have read and understand our <a class="fakeLink" href="#">Cookie Policy</a>, <a class="fakeLink" href="#">Privacy Policy</a>, and our <a class="fakeLink" href="#">Terms of Service</a>'
+            .molecule-notificationPanel__callToActionWrapper
+                +button("--small --blue", "Got it")

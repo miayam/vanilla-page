@@ -1,0 +1,11 @@
+// These are styling for non-semantic element such as hack, clearfix, colors, etc
+// or styling from third party CSS needed to override.
+// Anything that doesn't comply with atomic design.
+
+@import '../utilities/colors';
+
+.fakeLink {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,3 +1,4 @@
+include ../atoms/logo
 mixin headerBar()
     nav(class="molecule-headerBar")
-        image(class="atom-logo", src=require("../images/logo.png"))
+        +logo(require("../images/logo.png"))

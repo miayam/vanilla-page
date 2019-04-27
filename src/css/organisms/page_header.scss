@@ -5,7 +5,29 @@
 .organism-pageHeader {
     width: 100%;
     background: $dark_blue;
+    position: relative;
+
+}
+
+.organism-pageHeader__headerBar {
+    position: relative;
+    background-color: transparent;
+    max-width: $max_container_width;
+    margin: 0 auto;
+    z-index: $z_header;
+    .molecule-headerBar {
+        position: absolute;
+        padding: $default_space;
+    }
+}
+
+.organism-pageHeader__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: $max_container_width;
     height: $max_container_tablet_height;
+    margin: 0 auto;
     @media(max-width: $max_container_tablet_width) {
         height: $max_container_mobile_height;
         .molecule-hero {
@@ -28,25 +50,4 @@
             font-size: 17px;
         }
     }
-}
-
-.organism-pageHeader__headerBar {
-    position: relative;
-    background-color: transparent;
-    max-width: $max_container_width;
-    margin: 0 auto;
-    z-index: $z_header;
-    .molecule-headerBar {
-        position: absolute;
-        padding: $default_space;
-    }
-}
-
-.organism-pageHeader__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: $max_container_width;
-    height: 100%;
-    margin: 0 auto;
 }

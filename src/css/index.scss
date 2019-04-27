@@ -13,6 +13,10 @@ html, body {
 @import "organisms/index";
 @import "templates/index";
 
+// Global styling for non-semantic element, usually clearfix, colors, hacks, or CSS from third party libraries.
+// Anything that doesn't comply with our design system.
+@import "universe/index";
+
 // Default fonts.
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {

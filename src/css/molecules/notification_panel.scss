@@ -1,0 +1,33 @@
+@import "../utilities/sizes";
+@import "../utilities/colors";
+
+.molecule-notificationPanel {
+    width: 100%;
+    background-color: $smoke_gray;
+}
+
+.molecule-notificationPanel__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: $max_notification_panel_content_width;
+    padding: $default_space 0;
+    p {
+        width: 80%;
+        margin: unset;
+    }
+
+    @media(max-width: $max_container_tablet_width) {
+        padding: $default_space;
+        p {
+            margin: $default_space 0;
+        }
+    }
+}
+
+.molecule-notificationPanel__callToActionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
