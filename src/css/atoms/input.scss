@@ -1,0 +1,14 @@
+@import "../utilities/colors";
+@import "../utilities/sizes";
+
+.atom-input {
+    ::placeholder, :-ms-input-placeholder, ::-ms-input-placeholder {
+        color: $smoke_gray;
+    }
+
+    background-color: $white;
+    padding: $small_space;
+    border: unset;
+    width: 100%;
+    color: $black;
+}

@@ -1,0 +1,55 @@
+@import "../utilities/sizes";
+@import "../utilities/colors";
+@import "../utilities/z_indexes";
+
+.molecule-newsLetter {
+    background-color: $blue;
+    max-width: $max_news_letter_width;
+    position: fixed;
+    color: $white;
+    z-index: $z_news_letter;
+    opacity: 0.9;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: $default_space;
+    .atom-iconButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: $default_space;
+    }
+}
+
+.molecule-newsLetter__content {
+    padding: 0 $news_letter_space;
+    h1 {
+        font-size: $panel_header_h1_medium;
+        margin: $small_space 0;
+    }
+}
+
+.molecule-newsLetter__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.molecule-newsLetter__inputWrapper {
+    display: flex;
+    flex-basis: $base_width_news_letter_input;
+    flex-grow: 6;
+    flex-shrink: 0;
+    padding: $news_letter_space;
+}
+
+.molecule-newsLetter__buttonWrapper {
+    display: flex;
+    flex-basis: $base_width_news_letter_button;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: $news_letter_space;
+}

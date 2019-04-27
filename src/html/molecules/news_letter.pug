@@ -1,0 +1,16 @@
+include ../atoms/input
+include ../atoms/button
+include ../atoms/icon_button
+
+mixin newsLetter()
+    article(class="molecule-newsLetter")
+        +iconButton("&times;")
+        .molecule-newsLetter__content
+            h1!= "Get latest updates in web technologies"
+            p!= "I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all."
+        .molecule-newsLetter__form
+            .molecule-newsLetter__inputWrapper
+                +input()
+            .molecule-newsLetter__buttonWrapper
+                +button("--orange --take-up-whole-space", "Count me in!")
+

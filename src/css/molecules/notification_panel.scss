@@ -1,9 +1,11 @@
 @import "../utilities/sizes";
 @import "../utilities/colors";
+@import "../utilities/z_indexes";
 
 .molecule-notificationPanel {
     width: 100%;
     background-color: $smoke_gray;
+    z-index: $z_notification_panel;
 }
 
 .molecule-notificationPanel__content {
@@ -12,7 +14,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: $max_notification_panel_content_width;
-    padding: $default_space 0;
+    padding: $medium_space 0;
     p {
         width: 80%;
         margin: unset;

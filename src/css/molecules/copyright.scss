@@ -1,0 +1,16 @@
+@import "../utilities/sizes";
+@import "../utilities/colors";
+
+.molecule-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.molecule-copyright__p {
+    max-width: $max_paragraph_width;
+    font-size: $footer_paragraph;
+    text-align: center;
+    color: $white;
+}

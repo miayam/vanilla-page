@@ -1,0 +1,8 @@
+include ../molecules/copyright
+include ../molecules/news_letter
+
+mixin footer()
+    +newsLetter()
+    footer(class="organism-footer")
+        +copyright()
+    

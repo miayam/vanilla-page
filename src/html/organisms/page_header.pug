@@ -3,8 +3,8 @@ include ../molecules/hero
 include ../molecules/notification_panel
 
 mixin pageHeader()
+    +notificationPanel()
     header(class="organism-pageHeader" id="pgheader")
-        +notificationPanel()
         .organism-pageHeader__headerBar
             +headerBar()
         .organism-pageHeader__content

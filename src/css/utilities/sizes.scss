@@ -11,6 +11,9 @@ $max_paragraph_width: 720px;
 
 // Newsletter.
 $max_news_letter_width: 640px;
+$base_width_news_letter_input: 360px;
+$base_width_news_letter_button: 140px;
+$news_letter_space: 10px;
 
 // Space inside block element such as paragraph, section, etc.
 $default_space: 20px;
@@ -20,8 +23,8 @@ $small_space: 10px;
 
 // Logo.
 $logo_margin: 24px;
-$logo_size: 50px;
-$logo_size_small: 38px;
+$logo_size: 45px;
+$logo_size_small: 35px;
 
 // Highlight.
 $min_highlight_width: 240px;
@@ -29,6 +32,7 @@ $min_highlight_width: 240px;
 // Icon inside highlight section.
 $icon_margin: 12px;
 $icon_size: 2em;
+$icon_size_medium: 1.5em;
 
 // Wording (h1-h6, p, etc)
 $panel_header_h1_big: 35px;
@@ -49,6 +53,8 @@ $hero_p_max_width: 580px;
 $hero_cta: 20px;
 $hero_cta_tablet: 17px;
 
-
 // Button.
 $button_border_size: 2px;
+
+// Footer
+$footer_paragraph: 15px;

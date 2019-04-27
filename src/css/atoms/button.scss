@@ -25,11 +25,13 @@
 .--orange {
     background-color: $orange;
     color: $white;
+    border: $button_border_size solid $orange;
 }
 
 .--blue {
     background-color: $blue;
     color: $white;
+    border: $button_border_size solid $blue;
 }
 
 .--bordered {

@@ -1,8 +1,6 @@
-// These are styling for non-semantic element such as hack, clearfix, colors, etc
-// or styling from third party CSS needed to override.
-// Anything that doesn't comply with atomic design.
-
-@import '../utilities/colors';
+// These are styling for non-semantic element that breaks design system such as hacks, clearfix, etc.
+// Or any styling from third party libraries that needs to be overriden. These are mostly CSS cosmetic surgery.
+// Cosmetic surgery is not natural and considered bad practice, but Lee Min-Ho needs it.
 
 .fakeLink {
     color: blue;
