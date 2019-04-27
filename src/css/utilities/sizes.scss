@@ -1,27 +1,53 @@
 // Container.
-$max_container_size: 1366px;
-$max_container_tablet_size: 960px;
-$max_container_mobile_size: 480px;
+$max_container_width: 1366px;
+$max_container_tablet_width: 960px;
+$max_container_mobile_width: 480px;
+$max_container_tablet_height: 702px;
+$max_container_mobile_height: 480px;
 
 // Notification panel.
-$max_notification_panel_content_size: 720px;
+$max_notification_panel_content_width: 720px;
+$max_paragraph_width: 720px;
 
 // Newsletter.
-$max_news_letter_size: 640px;
+$max_news_letter_width: 640px;
 
-// Default space inside block element such as paragraph, section, etc.
+// Space inside block element such as paragraph, section, etc.
 $default_space: 20px;
+$wide_space: 50px;
+$small_space: 10px;
 
 // Logo.
 $logo_margin: 24px;
-
-// Heading
-$h1: 24px;
-$h2: 18px;
+$logo_size: 50px;
+$logo_size_small: 38px;
 
 // Highlight.
-$min_highlight_size: 240px;
+$min_highlight_width: 240px;
 
 // Icon inside highlight section.
 $icon_margin: 12px;
 $icon_size: 1.2em;
+
+// Wording (h1-h6, p, etc)
+$panel_header_h1_big: 35px;
+$panel_header_h1_medium: 26px;
+$panel_header_h2_big: 28px;
+$panel_header_h2_medium: 23px;
+$panel_header_p_big: 22px;
+$panel_header_p_medium: 17px;
+
+// Hero Shot
+$hero_h1: 35px; 
+$hero_h1_tablet: 28px;
+$hero_h2: 30px;
+$hero_h2_tablet: 23px;
+$hero_p: 23px;
+$hero_p_tablet: 17px;
+$hero_p_max_width: 580px;
+$hero_cta: 20px;
+$hero_cta_tablet: 17px;
+
+
+// Button.
+$button_border_size: 2px;

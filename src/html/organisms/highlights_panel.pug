@@ -1,0 +1,24 @@
+include ../molecules/highlight
+include ../molecules/header_bar
+include ../molecules/panel_header
+
+//- If element has semantic meaning (section, address, aside, etc), please use element(class="some_class") instead of .some_class
+//- Just to make sure that "div" wrapper doesn't mean anything.
+
+mixin highlightsPanel()
+    main(class="organism-highlightsPanel" role="main")
+        .organism-highlightsPanel__wrapper
+            +panelHeader()
+            section(class="organism-highlightsPanel__highlightsWrapper")
+                .organism-highlightsPanel__highlight
+                    +highlight("Co-create, design thinking; strengthen infrastructure resist granular.Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress.", "icon-paint-brush", "Design")
+                .organism-highlightsPanel__highlight
+                    +highlight("Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable.", "icon-comments-o", "Consult")
+                .organism-highlightsPanel__highlight
+                    +highlight("Revolutionary circular, movements a or impact framework social impact low-hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of thought provoking.", "icon-cubes", "Develop")
+                .organism-highlightsPanel__highlight
+                    +highlight("Peaceful, vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective.", "icon-bullhorn", "Marketing")
+                .organism-highlightsPanel__highlight
+                    +highlight("Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social.", "icon-tasks", "Manage")
+                .organism-highlightsPanel__highlight
+                    +highlight("Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer.", "icon-line-chart", "Evolve")

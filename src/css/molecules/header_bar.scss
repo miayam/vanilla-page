@@ -1,0 +1,13 @@
+@import "../utilities/sizes";
+
+.molecule-headerBar {
+    position: relative;
+    .atom-logo {
+        top: $wide_space;
+        position: absolute;
+        @media(max-width: $max_container_tablet_width) {
+            width: $logo_size_small;
+            height: $logo_size_small;
+        }
+    }
+}

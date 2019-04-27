@@ -1,6 +1,5 @@
-include atoms/button
-include molecules/highlight
-include organisms/highlightsPanel
+include organisms/page_header
+include organisms/highlights_panel
 
 doctype html
 html(lang="en")
@@ -11,11 +10,5 @@ html(lang="en")
         meta(name="description", content="A landing page built with as little tooling as possible. At least having no more than it's really needed.")
         title Webpack setting works!
     body
-        main
-            section(class="dark-blue")
-                +button("atom-button --bordered --small", "Hello")
-            section(class="dark-blue")
-                +button("atom-button --orange --take-up-whole-space", "Hello")
-            section(class="dark-blue")
-                +button("atom-button --blue --take-up-whole-space", "Hello")
-            +highlightsPanel()
+        +pageHeader()
+        +highlightsPanel()

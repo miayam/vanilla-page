@@ -4,20 +4,29 @@
 .organism-highlightsPanel {
     background-color: $smoke_gray;
     width: 100%;
-    padding: $default_space 0;
+    padding: $wide_space 0;
+    @media(max-width: $max_container_tablet_width) {
+        .molecule-panelHeader__h1 {
+            font-size: $hero_h1_tablet;
+        }
+
+        .molecule-panelHeader__p {
+            font-size: $hero_p_tablet;
+            padding: $default_space;
+        }
+    }
 }
 
-// Wrapper for hightlights panel. No semantic meaning.
 .organism-highlightsPanel__wrapper {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: $max_container_size; // 1360px
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: $max_container_width; 
 }
 
-// Wrapper for highlight tiles. No semantic meaning.
+// It is to wrap all highlight items.
 .organism-highlightsPanel__highlightsWrapper {
     display: flex;
     flex-direction: row;
@@ -25,17 +34,19 @@
     background-color: $smoke_gray;
 }
 
-// Layout for hightlight molecule.
+// It is to add responsiveness to each highlight component according to specification.
+// Breakpoint for tablet is 960px ($max_container_tablet_width)
+// Breakpoint for mobile is 480px ($max_container_mobile_width)
 .organism-highlightsPanel__highlight {
     display: flex;
-    flex-basis: $min_highlight_size; // 240px;
+    flex-basis: $min_highlight_width;
     flex-grow: 1;
     flex-shrink: 0;
     min-width: 50%;
-    width: calc((#{$max_container_mobile_size} - 100%) * 1000);
+    width: calc((#{$max_container_mobile_width} - 100%) * 1000); // This is a technique I borrow from https://www.sitepoint.com/responsive-css-patterns-without-media-queries/
     max-width: 100%;
     padding: $default_space;
-    @media(min-width: $max_container_tablet_size) {
-        min-width: 33.333%;
+    @media(min-width: $max_container_tablet_width) {
+        min-width: 33.333%; // Each row must consist of 3 highlight components on desktop and tv screen.
     }
 }

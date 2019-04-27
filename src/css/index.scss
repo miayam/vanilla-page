@@ -1,17 +1,25 @@
 // Sanitize CSS default for cross-browser styling.
 @import "~sanitize.css";
 
-// Atomic Design
-@import "atoms/index.scss";
-@import "molecules/index.scss";
-@import "organisms/index.scss";
-@import "templates/index.scss";
-
-// Selected icons from FontAwesome. Why would we load hundreds of icons if we just need 6?
-// Special thanks to Icomoon.io. This web app lets you pick icons you need. That's all.
-@import "utilities/icons.scss";
-
-// Make sure html and body's height take up the whole space.
+// Make sure html and body take up the whole space.
 html, body {
     height: 100%;
+    width: 100%;
 }
+
+// Atomic design.
+@import "atoms/index";
+@import "molecules/index";
+@import "organisms/index";
+@import "templates/index";
+
+// Default fonts.
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+// These are selected icons from FontAwesome. Why would we load hundreds of icons if we just need 6?
+// Special thanks to https://icomoon.io. This web app lets you pick icons you only need.
+// As little icons as possible :)
+@import "utilities/icons";

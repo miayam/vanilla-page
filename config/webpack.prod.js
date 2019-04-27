@@ -11,10 +11,10 @@ module.exports = Merge(CommonConfig, {
     output: {
         path: path.join(__dirname, '../dist'), // Why '../dist' instead of 'dist'? It must be relative to webpack.config.js on root folder. It's kind of weird. 
         filename: 'bundle-[contenthash].js',
-        publicPath: '/vanilla-page'
+        publicPath: '/vanilla-page/' // This is a repo name on my GitHub. Delete it if you don't deploy to GitHub Pages. 
     },
     optimization: {
-        splitChunks: {
+        splitChunks: { // Although there's not much JavaScript and CSS here, code-split it.
             cacheGroups: {
                 styles: {
                     name: 'styles',

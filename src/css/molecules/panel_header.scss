@@ -1,0 +1,18 @@
+@import "../utilities/sizes";
+@import "../utilities/colors";
+
+.molecule-panelHeader {
+    color: $black;
+}
+
+.molecule-panelHeader__h1 {
+    text-align: center;
+    margin: unset;
+    font-size: $panel_header_h1_big;
+}
+
+.molecule-panelHeader__p {
+    max-width: $max_paragraph_width;
+    font-size: $panel_header_p_big;
+    text-align: center;
+}

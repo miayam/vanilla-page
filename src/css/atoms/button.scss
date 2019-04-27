@@ -1,23 +1,5 @@
 @import "../utilities/colors";
-
-// For testing only
-.dark-blue {
-    background-color: $dark-blue;
-    padding: 30px;
-}
-
-.wrapper {
-    padding: 50px;
-    background-color: $smoke_gray;
-}
-
-.smokeGray {
-    margin: 30px;
-    background: $smoke_gray;
-    padding: 50px;
-    border: 1px solid $bold_smoke_gray;
-    box-shadow: 0px 0.8px 0 0.8px $white, inset 0 0.8px 0 0.8px $white;
-}
+@import "../utilities/sizes";
 
 .atom-button {
     padding: 12px;
@@ -27,7 +9,13 @@
 }
 
 .--small {
-    min-width: 100px;
+    width: 100px;
+    padding: $small_space 0;
+}
+
+.--big {
+    width: 250px;
+    padding: $default_space 0;
 }
 
 .--take-up-whole-space {
@@ -36,18 +24,16 @@
 
 .--orange {
     background-color: $orange;
-    border: 1px solid $orange;
     color: $white;
 }
 
 .--blue {
     background-color: $blue;
-    border: 1px solid $blue;
     color: $white;
 }
 
 .--bordered {
-    border: 1px solid $white;
+    border: $button_border_size solid $white;
     background-color: transparent;
     color: $white;
     &:hover {

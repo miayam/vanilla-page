@@ -1,5 +1,9 @@
+// These are selected icons from FontAwesome. Why would we load hundreds of icons if we just need 6?
+// Special thanks to https://icomoon.io. Icomoon lets you pick icons you only need.
+// Import as little icons as possible :)
 @font-face {
     font-family: 'vanilla-page';
+    font-display: auto;
     src:  url('../fonts/vanilla-page.eot?3l5wly');
     src:  url('../fonts/vanilla-page.eot?3l5wly#iefix') format('embedded-opentype'),
         url('../fonts/vanilla-page.ttf?3l5wly') format('truetype'),

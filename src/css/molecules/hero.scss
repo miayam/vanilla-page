@@ -1,0 +1,36 @@
+@import "../utilities/colors";
+@import "../utilities/sizes";
+
+.molecule-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+}
+
+.molecule-hero__h1 {
+    font-weight: normal;
+    font-size: $hero_h1;
+    margin: unset;
+    margin-bottom: $small_space;
+}
+
+.molecule-hero__h2 {
+    font-weight: bold;
+    margin: unset;
+    margin-bottom: $small_space;
+    font-size: $hero_h2;
+}
+
+.molecule-hero__p {
+    max-width: $hero_p_max_width;
+    font-size: $hero_p;
+    padding-bottom: $default_space;
+}
+
+.molecule-hero__callToAction {
+    font-size: $hero_cta;
+    font-weight: bold;
+}

@@ -10,11 +10,11 @@
 }
 
 .molecule-highlight__paragraph {
-    width: 100%;
+    font-size: $panel_header_p_medium;
 }
 
 .molecule-highlight__heading {
-    font-size: $h2;
+    font-size: $panel_header_h2_medium;
     margin-top: unset;
 }
 
@@ -23,7 +23,7 @@
     top: 0;
     right: 0;
     color: $medium_smoke_gray;
-    font-size: $h1;
+    font-size: $panel_header_h1_medium;
     display: inline-block;
     margin: $icon_margin;
 }

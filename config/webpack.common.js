@@ -20,7 +20,7 @@ module.exports = {
                 use: ["pug-loader"]
             },
             {
-                test: /\.(sa|sc|c)ss$/, // Enable Sassy CSS because we need mixin and modular CSS. Vanilla CSS is very hard my friend. 
+                test: /\.(sa|sc|c)ss$/, // Enable Sassy CSS because we need mixin and stuff. Vanilla CSS is very hard my friend. 
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -42,6 +42,16 @@ module.exports = {
                         outputPath: 'fonts/'
                     }
                 }]
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name]-[hash].[ext]",
+                        outputPath: 'images/'
+                    },
+                }
             }
         ],
     },
