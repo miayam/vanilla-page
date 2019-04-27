@@ -1,5 +1,5 @@
-mixin highlight(content, icon, heading)
+mixin highlight(highlight)
     article(class=`molecule-highlight`)
-        h1(class="h1 molecule-highlight__heading") #{heading}
-        span(class=`icon ${icon} molecule-highlight__icon`)
-        p(class="p molecule-highlight__paragraph") #{content}
+        h1(class="h1 molecule-highlight__heading") #{highlight.heading}
+        span(class=`icon ${highlight.icon} molecule-highlight__icon`)
+        p(class="p molecule-highlight__paragraph") #{highlight.content}

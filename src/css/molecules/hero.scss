@@ -1,5 +1,6 @@
 @import "../utilities/colors";
 @import "../utilities/sizes";
+@import "../utilities/z_indexes";
 
 .molecule-hero {
     display: flex;
@@ -8,6 +9,7 @@
     align-items: center;
     text-align: center;
     color: $white;
+    z-index: $z_hero;
 }
 
 .molecule-hero__h1 {

@@ -1,6 +1,7 @@
 @import "../utilities/sizes";
 @import "../utilities/colors";
 
-.atom-iconButton {
+.atom-spanButton {
     font-size: $icon_size_medium;
+    cursor: pointer;
 }

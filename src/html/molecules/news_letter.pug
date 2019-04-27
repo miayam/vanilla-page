@@ -1,16 +1,20 @@
 include ../atoms/input
 include ../atoms/button
-include ../atoms/icon_button
+include ../atoms/span_button
 
-mixin newsLetter()
+//- If element has semantic meaning (section, address, aside, etc), please use element(class="some_class") instead of .some_class
+//- Just to make sure that "div" wrapper doesn't mean anything.
+
+mixin newsLetter(news_letter)
     article(class="molecule-newsLetter")
-        +iconButton("&times;")
+        +spanButton("&times;")
         .molecule-newsLetter__content
-            h1!= "Get latest updates in web technologies"
-            p!= "I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all."
-        .molecule-newsLetter__form
+            h1 #{news_letter.heading}
+            p #{news_letter.paragraph}
+        form(class="molecule-newsLetter__form")
             .molecule-newsLetter__inputWrapper
-                +input()
+                +input("email")
+                label(for="email", class="hidePlease") Email
             .molecule-newsLetter__buttonWrapper
-                +button("--orange --take-up-whole-space", "Count me in!")
+                +button("--orange --take-up-whole-space", `${news_letter.cta}`)
 

@@ -1,0 +1,8 @@
+include ../organisms/page_header
+include ../organisms/highlights_panel
+include ../organisms/footer
+
+mixin landingPage(landing_page)
+    +pageHeader(landing_page.page_header)
+    +highlightsPanel(landing_page.highlights_panel)
+    +footer(landing_page.footer)

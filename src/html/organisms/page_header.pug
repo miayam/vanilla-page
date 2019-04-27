@@ -2,11 +2,13 @@ include ../molecules/header_bar
 include ../molecules/hero
 include ../molecules/notification_panel
 
-mixin pageHeader()
-    +notificationPanel()
+//- If element has semantic meaning (section, address, aside, etc), please use element(class="some_class") instead of .some_class
+//- Just to make sure that "div" wrapper doesn't mean anything.
+
+mixin pageHeader(page_header)
+    +notificationPanel(page_header.notification_panel)
     header(class="organism-pageHeader" id="pgheader")
         .organism-pageHeader__headerBar
             +headerBar()
         .organism-pageHeader__content
-            +hero()
-
+            +hero(page_header.hero)

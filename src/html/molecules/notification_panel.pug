@@ -1,8 +1,11 @@
 include ../atoms/button
 
-mixin notificationPanel()
-    section(class="molecule-notificationPanel")
+//- If element has semantic meaning (section, address, aside, etc), please use element(class="some_class") instead of .some_class
+//- Just to make sure that "div" wrapper doesn't mean anything.
+
+mixin notificationPanel(notification_panel)
+    article(class="molecule-notificationPanel")
         .molecule-notificationPanel__content
-            p!= 'By accessing and using this website, you acknowledge that you have read and understand our <a class="fakeLink" href="#">Cookie Policy</a>, <a class="fakeLink" href="#">Privacy Policy</a>, and our <a class="fakeLink" href="#">Terms of Service</a>'
+            p!= `${notification_panel.content}`
             .molecule-notificationPanel__callToActionWrapper
-                +button("--small --blue", "Got it")
+                +button("--small --blue", `${notification_panel.cta}`)

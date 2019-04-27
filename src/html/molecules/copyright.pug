@@ -1,3 +1,6 @@
-mixin copyright()
+//- If element has semantic meaning (section, address, aside, etc), please use element(class="some_class") instead of .some_class
+//- Just to make sure that "div" wrapper doesn't mean anything.
+
+mixin copyright(copyright)
     .molecule-copyright
-        p(class="molecule-copyright__p") © 2019 Muhammad D. Ramadhan. All rights reserved.​
+        p(class="molecule-copyright__p") #{copyright}​

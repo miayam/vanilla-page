@@ -1,0 +1,64 @@
+{
+    "title": "Muhammad D. Ramadhan | Cermati.com Front-end Developer Entry Test",
+    "description": "A landing page built with as little tooling as possible. At least having no more than it's really needed.",
+    "landing_page": {
+        "page_header": {
+            "notification_panel": {
+                "content": "By accessing and using this website, you acknowledge that you have read and understand our <span class=\"fakeLink\">Cookie Policy</span>, <span class=\"fakeLink\">Privacy Policy</span>, and our <span class=\"fakeLink\">Terms of Service</span>.",
+                "cta": "Got it"
+            },
+            "hero": {
+                "h1": "Hello! I'm Muhammad D. Ramadhan",
+                "h2": "Consult, Design, and Develop Websites",
+                "p": "Have something great in mind? Feel free to contact me. I'll help you to make it happen.",
+                "cta": "Let's Make Contact"
+            }
+        },
+        "highlights_panel": {
+            "panel_header": {
+                "heading": "How Can I Help You?",
+                "paragraph": "Our work then targeted, best practices outcomes social innovation synergy. Venture philanthropy, revolutionary inclusive policymaker relief. User-centered program areas scale.\n                "
+            },
+            "highlights": [
+                {
+                    "heading": "Consult",
+                    "icon": "icon-comments-o",
+                    "content": "Co-create, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress."
+                },
+                {
+                    "heading": "Design",
+                    "icon": "icon-paint-brush",
+                    "content": "Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable."
+                },
+                {
+                    "heading": "Develop",
+                    "icon": "icon-cubes",
+                    "content": "Revolutionary circular, movements a or impact framework social impact low-hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of thought provoking."
+                },
+                {
+                    "heading": "Marketing",
+                    "icon": "icon-bullhorn",
+                    "content": "Peaceful, vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective."
+                },
+                {
+                    "heading": "Manage",
+                    "icon": "icon-tasks",
+                    "content": "Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social."
+                },
+                {
+                    "heading": "Evolve",
+                    "icon": "icon-line-chart",
+                    "content": "Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer."
+                }
+            ]
+        },
+        "footer": {
+            "copyright": "",
+            "news_letter": {
+                "heading": "Get latest updates in web technologies",
+                "paragraph": "I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.",
+                "cta": "Count me in!"
+            }
+        }
+    }
+}

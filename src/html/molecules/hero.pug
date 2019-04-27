@@ -1,8 +1,11 @@
 include ../atoms/button
 
-mixin hero()
+//- If element has semantic meaning (section, address, aside, etc), please use element(class="some_class") instead of .some_class
+//- Just to make sure that "div" wrapper doesn't mean anything.
+
+mixin hero(hero)
     .molecule-hero
-        h1(class="molecule-hero__h1") Hello I'm Muhammad D. Ramadhan
-        h2(class="molecule-hero__h2") Consult, Design, and Develop Websites
-        p(class="molecule-hero__p") Have something great in mind? Feel free to contact me. I'll help you to make it happen.
-        +button("--bordered --big molecule-hero__callToAction", "LET'S MAKE CONTACT")
+        h1(class="molecule-hero__h1") #{hero.h1}
+        h2(class="molecule-hero__h2") #{hero.h2}
+        p(class="molecule-hero__p")  #{hero.p}
+        +button("--bordered --big molecule-hero__callToAction", hero.cta)

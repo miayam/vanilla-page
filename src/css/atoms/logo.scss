@@ -1,6 +1,8 @@
 @import "../utilities/sizes";
+@import "../utilities/z_indexes";
 
 .atom-logo {
     width: $logo_size;
     height: $logo_size;
+    z-index: $z_logo;
 }

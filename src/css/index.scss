@@ -13,8 +13,9 @@ html, body {
 @import "organisms/index";
 @import "templates/index";
 
-// Global styling for non-semantic element, usually clearfix, colors, hacks, or CSS from third party libraries.
-// Anything that doesn't comply with our design system.
+// These are styling for non-semantic element that breaks design system such as hacks, clearfix, etc.
+// Or any styling from third party libraries that needs to be overriden. These are mostly CSS cosmetic surgery.
+// Cosmetic surgery is not natural and considered bad practice, but Lee Min-Ho needs it.
 @import "universe/index";
 
 // Default fonts.
@@ -24,6 +25,6 @@ body {
 }
 
 // These are selected icons from FontAwesome. Why would we load hundreds of icons if we just need 6?
-// Special thanks to https://icomoon.io. This web app lets you pick icons you only need.
+// Special thanks to https://icomoon.io. Icomoon lets you pick icons you only need.
 // As little icons as possible :)
 @import "utilities/icons";

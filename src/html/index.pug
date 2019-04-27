@@ -1,6 +1,9 @@
-include organisms/page_header
-include organisms/highlights_panel
-include organisms/footer
+//- Consume landing page data from data.json.
+- const fs = require('fs')
+- const file = fs.readFileSync('./src/data.json')
+- const data = JSON.parse(file)
+
+include templates/landing_page
 
 doctype html
 html(lang="en")
@@ -8,10 +11,9 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        meta(name="description", content="A landing page built with as little tooling as possible. At least having no more than it's really needed.")
+        meta(name="description", content=`${data.description}`)
         link(rel="icon", href=require('../images/favicon.png'))
-        title Webpack setting works!
+        title #{data.title}
     body
-        +pageHeader()
-        +highlightsPanel()
-        +footer()
+        +landingPage(data.landing_page)
+        

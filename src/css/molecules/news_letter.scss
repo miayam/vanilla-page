@@ -14,11 +14,11 @@
     display: flex;
     flex-direction: column;
     padding: $default_space;
-    .atom-iconButton {
+    .atom-spanButton {
         position: absolute;
         top: 0;
         right: 0;
-        margin: $default_space;
+        margin: $small_space;
     }
 }
 
