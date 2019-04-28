@@ -4,8 +4,8 @@ include ../atoms/button
 //- Just to make sure that "div" wrapper doesn't mean anything.
 
 mixin notificationPanel(notification_panel)
-    article(class="molecule-notificationPanel")
+    article(class="molecule-notificationPanel", id="notificationPanel")
         .molecule-notificationPanel__content
             p!= `${notification_panel.content}`
             .molecule-notificationPanel__callToActionWrapper
-                +button("--small --blue", `${notification_panel.cta}`)
+                +button("--small --blue", `${notification_panel.cta}`, 'notificationCTA')

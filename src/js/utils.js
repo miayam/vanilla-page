@@ -1,5 +1,5 @@
-// Make sure we can use localStorage or fallback to plain object.
-// Borrow it from my friend Dongjin Jung.
+// Make sure that we can use localStorage or fallback to plain old JavaScript object.
+// I borrow it from my friend Dongjin Jung. This is IIFE in action.
 export const storage = (function () {
     try {
         const st = localStorage || {}
@@ -33,7 +33,7 @@ export const storage = (function () {
         return {
             setItem: () => "",
             getItem: () => "",
-            removeItem: () => "",
+            removeItem: () => ""
         }
     }
 })()

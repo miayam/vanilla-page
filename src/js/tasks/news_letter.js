@@ -15,9 +15,9 @@ const hasPassed = (minutes) => (diff) => (now, then) => {
 
 // A function that will take `now` and `then` date object and then
 // tell weather the time has passed 10 minutes or not.
-export const hasPassed10Minutes = hasPassed(0.1)(timeDiffInMinutes)
+export const hasPassed10Minutes = hasPassed(10)(timeDiffInMinutes)
 
-export const closeNewsLetter = () => {
+export const handleCloseNewsLetter = () => {
     const closeButton = document.getElementById('closeButton');
     const newsLetter = document.getElementById('newsLetter');
     closeButton.addEventListener('click', () => {
@@ -61,7 +61,7 @@ const newsLetter = {
             hasPassed10Minutes(new Date(), new Date(landingPageStorage.time))
 
         // If LocalStorage is cleared by user, then return
-        if (!storageHasBeenInitialized) {
+        if (!storageHasBeenInitialized()) {
             return;
         }
 
@@ -71,11 +71,9 @@ const newsLetter = {
 
         if (hasPassedOneThirdOfMaxHeight && landingPageStorage.enabled && !landingPageStorage.open) {
             storage.setItem('landing_page', { ...landingPageStorage, open: true })
-            newsLetter.style.bottom = "0"
-            newsLetter.style.visibility = "visible"
         }
 
-        if (landingPageStorage.open) {
+        if (hasPassedOneThirdOfMaxHeight && landingPageStorage.open) {
             newsLetter.style.bottom = "0"
             newsLetter.style.visibility = "visible"
         }
@@ -83,10 +81,11 @@ const newsLetter = {
     },
     init: () => {
         const newsLetter = document.getElementById('newsLetter');
-        // Hide news letter by default
+        // Hide news letter by default.
         newsLetter.style.bottom = `${newsLetter.offsetHeight * -1}px`;
+        // Add simple animation for a bit.
         newsLetter.style.transition = "all .5s ease-out";
-        closeNewsLetter();
+        handleCloseNewsLetter();
         initializeStorage();
     }
 }
