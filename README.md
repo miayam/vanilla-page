@@ -46,5 +46,8 @@ output {
 ## Demo
 Here is the [demo](https://miayam.io/vanilla-page). I am happy with the result. It loads pretty fast. To be honest it's more performant than React.js "Hello World!". It's a static prerendered page that still works without JavaScript!
 
+The last audit I did using lighthouse.
+![alt Audit](https://ibb.co/8m5jTL2)
+
 ## Licence
 MIT © [Muhammad D. Ramadhan](https://github.com/miayam).
