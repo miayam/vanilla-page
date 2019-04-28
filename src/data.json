@@ -11,7 +11,7 @@
                 "h1": "Hello! I'm Muhammad D. Ramadhan",
                 "h2": "Consult, Design, and Develop Websites",
                 "p": "Have something great in mind? Feel free to contact me. I'll help you to make it happen.",
-                "cta": "Let's Make Contact"
+                "cta": "LET'S MAKE CONTACT"
             }
         },
         "highlights_panel": {
@@ -53,7 +53,7 @@
             ]
         },
         "footer": {
-            "copyright": "",
+            "copyright": "© 2019 Muhammad D. Ramadhan. All rights reserved.​",
             "news_letter": {
                 "heading": "Get latest updates in web technologies",
                 "paragraph": "I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.",

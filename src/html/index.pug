@@ -1,6 +1,7 @@
 //- Consume landing page data from data.json.
 - const fs = require('fs')
-- const file = fs.readFileSync('./src/data.json')
+- const path = './src/data.json'; // The path is relative to where webpack.config.js file is.
+- const file = fs.readFileSync(path)
 - const data = JSON.parse(file)
 
 include templates/landing_page

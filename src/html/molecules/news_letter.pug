@@ -6,7 +6,7 @@ include ../atoms/span_button
 //- Just to make sure that "div" wrapper doesn't mean anything.
 
 mixin newsLetter(news_letter)
-    article(class="molecule-newsLetter")
+    article(class="molecule-newsLetter" id="newsLetter")
         +spanButton("&times;")
         .molecule-newsLetter__content
             h1 #{news_letter.heading}
