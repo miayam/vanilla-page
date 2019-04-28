@@ -5,6 +5,9 @@
 .organism-pageHeader {
     width: 100%;
     background: $dark_blue;
+    background-image: url('../images/hero_banner.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
     position: relative;
 }
 

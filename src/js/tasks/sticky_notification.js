@@ -4,11 +4,8 @@ const cta = document.getElementById("notificationCTA")
 
 export default {
     handleScroll: () => {
-        // Get margin top of notification panel.
-        const notificationMarginTop = parseInt(window.getComputedStyle(notificationPanel).marginTop, 10);
-
-        // If notification panel has been hidden (negatively positioned), don't bother to handle scrolling event.
-        if (notificationMarginTop < 0) {
+        const isNotificationHidden = window.getComputedStyle(notificationPanel).position === "absolute"
+        if (isNotificationHidden) {
             return;
         }
 
@@ -25,9 +22,9 @@ export default {
     init: () => {
         notificationPanel.style.transition = "all .5s ease-out";
         notificationPanel.style.top = "0"; // Make sure notification is on top no matter its position is fixed, or relative to parent.
-
         cta.addEventListener('click', () => {
-            notificationPanel.style.marginTop = `${notificationPanel.offsetHeight * -1}px`;
+            notificationPanel.style.transform = "translateY(-100%)"
+            notificationPanel.style.position = "absolute"
         })
     }
 }

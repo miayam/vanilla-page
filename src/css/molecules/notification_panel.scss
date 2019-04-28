@@ -5,8 +5,8 @@
 .molecule-notificationPanel {
     width: 100%;
     background-color: $smoke_gray;
+    position: relative;
     z-index: $z_notification_panel;
-    padding-top: 0;
 }
 
 .molecule-notificationPanel__content {
