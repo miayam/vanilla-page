@@ -11,6 +11,7 @@ Thanks to Daniel Tonon for [this great article](https://css-tricks.com/abem-usef
 ## Setup
 
 ### 1. Installation
+---
 ```sh
 $ git clone [this repo URL] your_app
 $ cd your_app
