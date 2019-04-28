@@ -1,6 +1,6 @@
 # Vanilla Page
 
-This is a simple landing page built with `Pug`, `SCSS`, and vanilla `JavaScript`. It must be tempting to use `create-react-app` for every pet project, but we are missing out a lot of features React has to offer if we use it for a dead-simple landing page. I've heard many times some eccentric German philosphers said "the best design is as little design as possible". I think for a web development, "the best web app is as little tooling, libraries, frameworks, and jargons as possible" :).
+This is a simple landing page built with `Pug`, `SCSS`, and vanilla `JavaScript`. It must be tempting to use `create-react-app` for every pet project, but we are missing out a lot of features React has to offer if we use it for a dead-simple landing page. I've heard many times some eccentric German philosphers said "the best design is as little design as possible". I think for a web development, "the best web app is as little tooling, libraries, frameworks, and jargons as possible" :laughing:.
 
 ## Atomic Design Methodolgy + BEM + Common Sense
 Thanks to Daniel Tonon for [this great article](https://css-tricks.com/abem-useful-adaptation-bem/). He encourages us to combine modified BEM naming convention with atomic design methodology. He also wrote pros and cons for his approach and let us decide and manage the trade off.
