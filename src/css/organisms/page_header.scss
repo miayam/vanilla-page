@@ -37,19 +37,19 @@
         }
 
         .molecule-hero__h1 {
-            font-size: 28px;
+            font-size: $hero_h1_tablet;
         }
 
         .molecule-hero__h2 {
-            font-size: 23px;
+            font-size: $hero_h2_tablet;
         }
 
         .molecule-hero__p {
-            font-size: 17px;
+            font-size: $hero_p_tablet;
         }
 
         .molecule-hero__callToAction {
-            font-size: 17px;
+            font-size: $hero_cta_tablet;
         }
     }
 }
