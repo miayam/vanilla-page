@@ -18,20 +18,23 @@ $ yarn install
 ```
 
 ### 2. Development
+---
 ```sh
 $ yarn start
 ```
-Somehow the `node-sass` causes problome. I don't know why, but just rebuild it whenever the dev server failed.
+Somehow the `node-sass` causes problom. I don't know why, but just rebuild it whenever the dev server failed.
 ```sh
-$ npm rebuild node-sas
+$ npm rebuild node-sass --force
 ```
 
 ### 3. Build for Production
+---
 ```sh
 $ yarn build
 ```
 
 ### 4. Deployment
+---
 I decided to deploy the page to GitHub Page. Just delete this snippet on `src/config/webpack.prod.js` if you want to deploy to other platforms.
 ```js
 output {
