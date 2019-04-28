@@ -43,6 +43,11 @@ output {
 }
 ```
 
+## What To Improve
+1. Test the presentational JS using Jest. Currently it remains testless even if it works fine.
+2. Add ServiceWorker so we can see the landing page offline.
+3. Provide end to end testing (E2E) using Cypress. Well, it's just a dead simple landing page, but it would be awesome with E2E testing.
+
 ## Demo
 Here is the [demo](https://miayam.io/vanilla-page). I am happy with the result. It loads pretty fast. To be honest it's more performant than React.js "Hello World!". It's a static prerendered page that still works without JavaScript!
 
