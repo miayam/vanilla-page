@@ -8,5 +8,39 @@ Thanks to Daniel Tonon for [this great article](https://css-tricks.com/abem-usef
 ## How About Component Based UI?
 `Pug` is enough for a presentational component. I use `mixin` to separate elements of the page. It's dead simple but powerful. Thanks `Pug`!
 
+## Setup
+
+### 1. Installation
+```sh
+$ git clone [this repo URL] your_app
+$ cd your_app
+$ yarn install
+```
+
+### 2. Development
+```sh
+$ yarn start
+```
+Somehow the `node-sass` causes problome. I don't know why, but just rebuild it whenever the dev server failed.
+```sh
+$ npm rebuild node-sas
+```
+
+### 3. Build for Production
+```sh
+$ yarn build
+```
+
+### 4. Deployment
+I decided to deploy the page to GitHub Page. Just delete this snippet on `src/config/webpack.prod.js` if you want to deploy to other platforms.
+```js
+output {
+    publicPath: "/vanilla-page/"
+}
+```
+
 ## Demo
-Here is the [demo](https://miayam.io/vanilla-page). I am happy with the result. It loads pretty fast. To be honest it's more performant than React.js "Hello World!" because it's a static prerendered page. Thanks `Pug`!
+Here is the [demo](https://miayam.io/vanilla-page). I am happy with the result. It loads pretty fast. To be honest it's more performant than React.js "Hello World!". It's a static prerendered page that still works without JavaScript!
+
+## Licence
+MIT © [Muhammad D. Ramadhan](https://github.com/miayam).
