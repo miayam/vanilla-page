@@ -23,7 +23,7 @@ $ yarn install
 ```sh
 $ yarn start
 ```
-Somehow the `node-sass` causes problom. I don't know why, but just rebuild it whenever the dev server failed.
+Somehow the `node-sass` causes problem. I don't know why, but just rebuild it whenever the dev server failed.
 ```sh
 $ npm rebuild node-sass --force
 ```
@@ -46,9 +46,9 @@ output {
 ## Demo
 Here is the [demo](https://miayam.io/vanilla-page). I am happy with the result. It loads pretty fast. To be honest it's more performant than React.js "Hello World!". It's a static prerendered page that still works without JavaScript!
 
-The last audit I did using lighthouse.
 
 ### Audit
+The last audit I did using lighthouse in simulated fast 3G.
 ![alt Audit](https://i.ibb.co/rQ6ZTRM/Screen-Shot-2019-04-28-at-16-57-06.png)
 
 ## Licence
