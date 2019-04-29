@@ -53,7 +53,7 @@ $ yarn deploy
 3. Provide end to end testing (E2E) using Cypress. Well, it's just a dead simple landing page, but it would be awesome with E2E testing.
 
 
-### Special Thanks
+## Special Thanks
 At first, it was just an entry test from [Cermati.com](https://cermati.com). It turns out I enjoy working on it and turn it into a pet project. The coding exercise focus on the end result and it's framework agnostic. I like it very much. Don't be fooled by its simplicity. Simplicity doesn't mean easy. Thanks to you guys at [https://engineering.cermati.com](https://engineering.cermati.com).
 
 ## Demo
