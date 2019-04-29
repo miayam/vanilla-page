@@ -9,8 +9,10 @@ const timeDiffInMinutes = (now, then) => {
     return diffInMinutes;
 }
 
-const hasPassed = (minutes) => (diff) => (now, then) => {
-    return diff(now, then) >= minutes;
+// `timeUnit` could be milisecond, second, minute, hour, day, month, and year.
+// `diff` is a function to calculate the difference between two date object (Date).
+const hasPassed = (timeUnit) => (diff) => (now, then) => {
+    return diff(now, then) >= timeUnit;
 }
 
 // A function that will take `now` and `then` date object and then
@@ -81,6 +83,7 @@ const newsLetter = {
     },
     init: () => {
         const newsLetter = document.getElementById('newsLetter');
+
         // Hide news letter by default.
         newsLetter.style.bottom = `${newsLetter.offsetHeight * -1}px`;
         // Add simple animation for a bit.
