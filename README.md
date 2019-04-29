@@ -42,6 +42,10 @@ output {
     publicPath: "/vanilla-page/"
 }
 ```
+Here's how to deploy to Github Page.
+```
+$ yarn deploy
+```
 
 ## What To Improve
 1. Test the presentational JS using Jest. Currently it remains testless even if it works fine.
