@@ -52,9 +52,12 @@ $ yarn deploy
 2. Add ServiceWorker so we can see the landing page offline.
 3. Provide end to end testing (E2E) using Cypress. Well, it's just a dead simple landing page, but it would be awesome with E2E testing.
 
+
+### Special Thanks
+At first, it was just an entry test from [Cermati.com](https://cermati.com). It turns out I enjoy working on it and turn it into a pet project. The coding exercise focus on the end result and it's framework agnostic. I like it very much. Don't be fooled by its simplicity. Simplicity doesn't mean easy. Thanks to you guys at [https://engineering.cermati.com](https://engineering.cermati.com).
+
 ## Demo
 Here is the [demo](https://miayam.io/vanilla-page). I am happy with the result. It loads pretty fast. To be honest it's more performant than React.js "Hello World!". It's a static prerendered page that still works without JavaScript!
-
 
 ### Audit
 The last audit I did using lighthouse in simulated fast 3G.
