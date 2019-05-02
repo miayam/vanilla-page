@@ -4,7 +4,7 @@ const cta = document.getElementById("notificationCTA")
 
 export default {
     handleScroll: () => {
-        const isNotificationHidden = window.getComputedStyle(notificationPanel).position === "absolute"
+        const isNotificationHidden = notificationPanel.style.position === "absolute"
         if (isNotificationHidden) {
             // When user scroll down and notification panel fixed to viewport, the slide up animation won't
             // work properly. This only fix the remaining margin space of pageHeader when scrolled down.
