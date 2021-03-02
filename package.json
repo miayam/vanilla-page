@@ -10,12 +10,12 @@
     "env:dev": "cross-env NODE_ENV=dev",
     "env:prod": "cross-env NODE_ENV=prod",
     "env:test": "cross-env NODE_ENV=test",
-    "start": "yarn env:dev webpack-dev-server --open",
-    "webpack:test:server": "yarn env:test webpack $npm_package_config_webpack_args --watch",
+    "start": "npm run env:dev webpack-dev-server --open",
+    "webpack:test:server": "npm run env:test webpack $npm_package_config_webpack_args --watch",
     "jest": "jest test/bundle.test.js",
     "jest:server": "jest test/bundle.test.js --watch",
     "build:clean": "rimraf \"dist/!(.git*|Procfile)**\"",
-    "build": "yarn build:clean && yarn env:prod webpack $npm_package_config_webpack_args",
+    "build": "npm run build:clean && npm run env:prod webpack $npm_package_config_webpack_args",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
