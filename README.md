@@ -15,13 +15,13 @@ Thanks to Daniel Tonon for [this great article](https://css-tricks.com/abem-usef
 ```sh
 $ git clone [this repo URL] your_app
 $ cd your_app
-$ yarn install
+$ npm run install
 ```
 
 ### 2. Development
 ---
 ```sh
-$ yarn start
+$ npm run start
 ```
 Somehow the `node-sass` causes problem. I don't know why, but just rebuild it whenever the dev server failed.
 ```sh
@@ -31,7 +31,7 @@ $ npm rebuild node-sass --force
 ### 3. Build for Production
 ---
 ```sh
-$ yarn build
+$ npm run build
 ```
 
 ### 4. Deployment
@@ -44,7 +44,7 @@ output {
 ```
 Here's how to deploy to Github Page.
 ```
-$ yarn deploy
+$ npm run deploy
 ```
 
 ## What To Improve
