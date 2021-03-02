@@ -19,6 +19,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "node-notifier": "^8.0.1",
     "sanitize.css": "^8.0.0"
   },
   "devDependencies": {
